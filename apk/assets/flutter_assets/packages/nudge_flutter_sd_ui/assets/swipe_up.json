@@ -1,0 +1,57 @@
+{
+  "uiComponents": [
+    {
+      "type": "swipe",
+      "id": "swipe1",
+      "props": {
+        "orientation": null,
+        "imageUrl": null,
+        "autoDimension": null,
+        "text": "Swipe Up",
+        "fontColor": "#000000",
+        "fontSize": 32.0,
+        "fontWeight": 500,
+        "lineHeight": 80.0,
+        "alignment": "center",
+        "margin": {
+          "top": 0.0,
+          "bottom": 32.0,
+          "left": 0.0,
+          "right": 0.0
+        },
+        "padding": {
+          "top": 12.0,
+          "bottom": 12.0,
+          "left": 48.0,
+          "right": 48.0
+        },
+        "autoLink": null,
+        "elevation": 2.0,
+        "hasBg": true,
+        "bgUrl": null,
+        "bgColor": "#d0caca",
+        "bgOpacity": 50.0,
+        "hasBorder": true,
+        "borderColor": "#000000",
+        "borderOpacity": 50.0,
+        "roundness": 100.0,
+        "border": {
+          "top": 4.0,
+          "bottom": 4.0,
+          "left": 4.0,
+          "right": 4.0
+        },
+        "hasAction": true,
+        "clickType": "EXTERNAL_URL",
+        "target": null,
+        "hasTransition": false,
+        "transition": "flyUp",
+        "height": "hugContent",
+        "width": "hugContent",
+        "style": "normal",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "bottom"
+      }
+    }
+  ]
+}

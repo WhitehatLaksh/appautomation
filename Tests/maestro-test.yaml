@@ -1,147 +1,18 @@
 # Launch the app
-appLaunch: app-release.apk
+appId: com.example.nudgetest_demoqa1
 
-# Test Scenario 1: Create a new user and verify login
+# Separator
 ---
-flow:
-  - tapOn: 'Create Account'
-  - inputText:
-      text: 'newuser'
-      element: 'username_field'
-  - inputText:
-      text: 'password123'
-      element: 'password_field'
-  - tapOn: 'Sign Up'
-  - assertVisible: 'Welcome, newuser'  # Assuming there's a welcome message
-  - back
-
-# Test Scenario 2: Log in with an existing user
----
-flow:
-  - tapOn: 'Login'
-  - inputText:
-      text: 'existinguser'
-      element: 'username_field'
-  - inputText:
-      text: 'password123'
-      element: 'password_field'
-  - tapOn: 'Sign In'
-  - assertVisible: 'Welcome back, existinguser'
-  - back
-
-# Test Scenario 3: User logout and re-login
----
-flow:
-  - tapOn: 'Logout'
-  - assertVisible: 'Login'  # Assuming the Login screen is shown again
-  - tapOn: 'Login'
-  - inputText:
-      text: 'existinguser'
-      element: 'username_field'
-  - inputText:
-      text: 'password123'
-      element: 'password_field'
-  - tapOn: 'Sign In'
-  - assertVisible: 'Welcome back, existinguser'
-  - back
-
-# Test Scenario 4: Trigger a story as a new user
----
-flow:
-  - tapOn: 'Stories'
-  - tapOn: 'Start Story'
-  - assertVisible: 'Story is playing'  # Assuming there's a confirmation that the story started
-  - back
-
-# Test Scenario 5: Trigger a story as an existing user
----
-flow:
-  - tapOn: 'Stories'
-  - tapOn: 'Start Story'
-  - assertVisible: 'Story is playing'
-  - back
-
-# Test Scenario 6: Test multiple story triggers
----
-flow:
-  - tapOn: 'Stories'
-  - tapOn: 'Start Story 1'
-  - assertVisible: 'Story 1 is playing'
-  - tapOn: 'Next Story'
-  - assertVisible: 'Story 2 is playing'
-  - tapOn: 'Next Story'
-  - assertVisible: 'Story 3 is playing'
-  - back
-
-# Test Scenario 7: Start and complete a quiz as a new user
----
-flow:
-  - tapOn: 'Quiz'
-  - tapOn: 'Start Quiz'
-  - inputText:
-      text: 'Answer 1'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - inputText:
-      text: 'Answer 2'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - tapOn: 'Submit'
-  - assertVisible: 'Quiz Completed'
-  - back
-
-# Test Scenario 8: Start and complete a quiz as an existing user
----
-flow:
-  - tapOn: 'Quiz'
-  - tapOn: 'Start Quiz'
-  - inputText:
-      text: 'Answer 1'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - inputText:
-      text: 'Answer 2'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - tapOn: 'Submit'
-  - assertVisible: 'Quiz Completed'
-  - back
-
-# Test Scenario 9: Test quiz with various answers
----
-flow:
-  - tapOn: 'Quiz'
-  - tapOn: 'Start Quiz'
-  - inputText:
-      text: 'Incorrect Answer'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - inputText:
-      text: 'Correct Answer'
-      element: 'quiz_answer_field'
-  - tapOn: 'Next'
-  - tapOn: 'Submit'
-  - assertVisible: 'Quiz Completed'
-  - back
-
-# Test Scenario 10: Delete an existing user
----
-flow:
-  - tapOn: 'Profile'
-  - tapOn: 'Delete Account'
-  - tapOn: 'Confirm'
-  - assertVisible: 'Account Deleted'
-  - back
-
-# Test Scenario 11: Attempt to log in after user deletion
----
-flow:
-  - tapOn: 'Login'
-  - inputText:
-      text: 'deleteduser'
-      element: 'username_field'
-  - inputText:
-      text: 'password123'
-      element: 'password_field'
-  - tapOn: 'Sign In'
-  - assertVisible: 'User does not exist'  # Assuming the app shows this message
+# Commands Section
+- launchApp:
+    appId: com.example.nudgetest_demoqa1
+- tapOn:
+    text: "Login"
+- inputText:
+    text: "username"
+    id: "username_field_id"  # Replace with actual ID
+- inputText:
+    text: "password"
+    id: "password_field_id"  # Replace with actual ID
+- tapOn:
+    text: "Submit"

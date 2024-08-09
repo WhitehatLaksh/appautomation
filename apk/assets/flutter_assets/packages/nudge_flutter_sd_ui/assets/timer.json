@@ -1,0 +1,47 @@
+{
+  "uiComponents": [
+    {
+      "type": "countdown",
+      "id": "8",
+      "props": {
+        "text": "Countdown",
+        "endDate": "2024-05-15T15:12:02Z",
+        "size": "small",
+        "color": "dark",
+        "margin": {
+          "top": "121",
+          "bottom": "",
+          "left": "",
+          "right": ""
+        },
+        "padding": {
+          "top": "031",
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "autoLink": true,
+        "style": "normal",
+        "horiAlignment": "left",
+        "verAlignment": "center",
+        "hasBg": true,
+        "bgColor": "#3897F0",
+        "bgOpacity": 100,
+        "hasBorder": false,
+        "borderColor": "#000000",
+        "borderOpacity": 100,
+        "border": {
+          "top": 10,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "hasAction": false,
+        "clickType": "EXTERNAL_URL",
+        "target": null,
+        "hasTransition": false,
+        "transition": "flyUp"
+      }
+    }
+  ]
+}

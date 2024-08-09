@@ -1,0 +1,278 @@
+{
+  "uiComponents": [
+    {
+      "type": "button",
+      "id": "button1",
+      "properties": {
+        "text": "Click Here",
+        "fontColor": "#ffffff",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "alignment": "center",
+        "margin": {
+          "top": 30,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "elevation": 2,
+        "padding": {
+          "top": 0,
+          "bottom": 10,
+          "left": 10,
+          "right": 0
+        },
+        "hasBg": true,
+        "bgUrl": "https://app.nudgenow.com/assets/campaign%20banner%20image.webp",
+        "bgColor": "#000000",
+        "bgOpacity": 60,
+        "hasBorder": true,
+        "borderColor": "#ffffff",
+        "borderOpacity": 100,
+        "roundness": 10,
+        "border": {
+          "top": 1,
+          "bottom": 1,
+          "left": 1,
+          "right": 1
+        },
+        "hasAction": true,
+        "clickType": "single",
+        "target": "https://example.com",
+        "hasTransition": true,
+        "transition": "fromBottom",
+        "height": "hugContent",
+        "width": "hugContent",
+        "style": "italic",
+        "horiAlignment": "right",
+        "verAlignment": "top"
+      }
+    },
+    {
+      "type": "text",
+      "id": "text1",
+      "properties": {
+        "text": "This is a sample text! asasdlaksjdlaksjdlaksjdlsk",
+        "fontColor": "#000000",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 24,
+        "alignment": "right",
+        "margin": {
+          "top": 50,
+          "bottom": 40,
+          "left": 100,
+          "right": 100
+        },
+        "padding": {
+          "top": 5,
+          "bottom": 5,
+          "left": 10,
+          "right": 10
+        },
+        "autoLink": true,
+        "height": "hugContent",
+        "width": "hugContent",
+        "style": "normal",
+        "hasBg": false,
+        "bgUrl": "",
+        "bgColor": "#ffffff",
+        "bgOpacity": 100,
+        "hasBorder": false,
+        "borderColor": "#000000",
+        "borderOpacity": 10,
+        "roundness": 10,
+        "border": {
+          "top": 10,
+          "bottom": 1,
+          "left": 10,
+          "right": 1
+        },
+        "hasAction": true,
+        "clickType": "",
+        "target": null,
+        "hasTransition": true,
+        "transition": "fromRight",
+        "horiAlignment": "center",
+        "verAlignment": "center"
+      }
+    },
+    {
+      "type": "image",
+      "id": "image1",
+      "properties": {
+        "imageUrl": "https://t4.ftcdn.net/jpg/01/43/42/83/360_F_143428338_gcxw3Jcd0tJpkvvb53pfEztwtU9sxsgT.jpg",
+        "autoDimension": true,
+        "height": 360,
+        "width": 360,
+        "padding": {
+          "top": 10,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "margin": {
+          "top": 10,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "elevation": 0,
+        "hasBorder": true,
+        "borderColor": "#ffffff",
+        "borderOpacity": 100,
+        "roundness": 180,
+        "border": {
+          "top": 10,
+          "bottom": 10,
+          "left": 10,
+          "right": 10
+        },
+        "hasAction": true,
+        "clickType": "",
+        "target": null,
+        "hasTransition": true,
+        "transition": "fromLeft",
+        "imageId": "image1",
+        "horiAlignment": "center",
+        "verAlignment": "center"
+      }
+    },
+    {
+      "type": "container",
+      "id": "container1",
+      "properties": {
+        "orientation": "vertical",
+        "margin": {
+          "top": 0,
+          "bottom": 20,
+          "left": 0,
+          "right": 0
+        },
+        "padding": {
+          "top": 10,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "width": "hugContent",
+        "height": "hugContent",
+        "hasBg": false,
+        "bgUrl": "",
+        "bgColor": "#A000AA",
+        "bgOpacity": 60,
+        "horiAlignment": "center",
+        "verAlignment": "bottom",
+        "horiContentAlignment": "center",
+        "verContentAlignment": "bottom",
+        "hasBorder": true,
+        "borderColor": "#000000",
+        "borderOpacity": 100,
+        "roundness": 30,
+        "border": {
+          "top": 1,
+          "bottom": 1,
+          "left": 1,
+          "right": 1
+        },
+        "hasAction": false,
+        "clickType": "",
+        "target": null,
+        "hasTransition": true,
+        "transition": "fromTop",
+        "children": [
+          {
+            "type": "image",
+            "id": "image1",
+            "properties": {
+              "imageUrl": "https://t4.ftcdn.net/jpg/01/43/42/83/360_F_143428338_gcxw3Jcd0tJpkvvb53pfEztwtU9sxsgT.jpg",
+              "autoDimension": true,
+              "height": 30,
+              "width": 30,
+              "padding": {
+                "top": 10,
+                "bottom": 10,
+                "left": 10,
+                "right": 10
+              },
+              "margin": {
+                "top": 10,
+                "bottom": 10,
+                "left": 10,
+                "right": 10
+              },
+              "elevation": 0,
+              "hasBorder": true,
+              "borderColor": "#ffffff",
+              "borderOpacity": 100,
+              "roundness": 20,
+              "border": {
+                "top": 10,
+                "bottom": 10,
+                "left": 10,
+                "right": 10
+              },
+              "hasAction": true,
+              "clickType": "",
+              "target": null,
+              "hasTransition": true,
+              "transition": "fromBottom",
+              "imageId": "image1",
+              "horiAlignment": "center",
+              "verAlignment": "center"
+            }
+          },
+          {
+            "type": "text",
+            "id": "text3",
+            "properties": {
+              "text": "Swipe Up",
+              "fontColor": "#ffffff",
+              "fontSize": 14,
+              "fontWeight": 300,
+              "lineHeight": 20,
+              "alignment": "center",
+              "margin": {
+                "top": 10,
+                "bottom": 20,
+                "left": 10,
+                "right": 10
+              },
+              "padding": {
+                "top": 5,
+                "bottom": 5,
+                "left": 10,
+                "right": 10
+              },
+              "autoLink": true,
+              "height": "auto",
+              "width": "hugContent",
+              "style": "normal",
+              "hasBg": false,
+              "bgUrl": "",
+              "bgColor": "#ffffff",
+              "bgOpacity": 100,
+              "hasBorder": false,
+              "borderColor": "#000000",
+              "borderOpacity": 100,
+              "roundness": 0,
+              "border": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "hasAction": true,
+              "clickType": "",
+              "target": null,
+              "hasTransition": true,
+              "transition": "fromBottom",
+              "horiAlignment": "center",
+              "verAlignment": "center"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

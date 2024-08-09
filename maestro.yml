@@ -1,7 +1,0 @@
-# maestro/maestro.yaml
-appId: "com.example.yourapp"
-flows:
-  - path: "flows/login_flow.yaml"
-  - path: "flows/story_flow.yaml"
-  - path: "flows/quiz_flow.yaml"
-  - path: "flows/delete_user_flow.yaml"
