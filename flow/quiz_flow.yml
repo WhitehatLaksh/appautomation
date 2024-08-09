@@ -1,0 +1,11 @@
+# maestro/flows/quiz_flow.yaml
+appId: "com.example.yourapp"
+flows:
+  - name: "Quiz Flow"
+    steps:
+      - launchApp
+      - tapOn: "Quizzes"
+      - tapOn: "Start Quiz"
+      - inputText: "Answer1"
+      - tapOn: "Submit"
+      - assertText: "Correct!"

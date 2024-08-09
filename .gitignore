@@ -1,0 +1,12 @@
+
+### `.gitignore`
+
+```gitignore
+# Ignore the APK file
+*.apk
+
+# Ignore log files
+*.log
+
+# Ignore any build artifacts
+/build/

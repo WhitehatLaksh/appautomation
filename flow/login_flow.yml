@@ -1,0 +1,10 @@
+# maestro/flows/login_flow.yaml
+appId: ""
+flows:
+  - name: "Login Flow"
+    steps:
+      - launchApp
+      - tapOn: "Create Account"
+      - inputText: "TestUser123"
+      - tapOn: "Continue"
+      - waitForVisible: "Home"
