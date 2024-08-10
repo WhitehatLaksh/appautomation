@@ -8,11 +8,19 @@ appId: com.example.nudgetest_demoqa1
     appId: com.example.nudgetest_demoqa1
 - tapOn:
     text: "Track Quiz"
-- assertNotVisible: "My Rewards"
+- assertVisible: "My Rewards"
 - tapOn:
     text: "Start Quiz"
-- tapOn:
-    text: "a)"
+
+- extendedWaitUntil:
+    visible: "My Rewards" # or any other selector
+    timeout: 50000
 - tapOn:
       text: "My Rewards"
+
+- assertVisible: "Back To Home"
+- tapOn:
+    text: "Back To Home"
+
+- killApp
 

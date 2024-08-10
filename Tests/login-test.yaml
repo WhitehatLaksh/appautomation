@@ -1,21 +1,19 @@
+# check if User Identier button is clickable or not
 appId: com.example.nudgetest_demoqa1
 
+# Separator
 ---
-launchApp:
-  - appId: com.example.nudgetest_demoqa1
-  - type: click
-    description: Click on 'Create Account'
-    selector: "text='Create Account'"
-  - type: type
-    description: Enter user identifier
-    selector: "input[name='user_identifier']"
-    text: "new_user"
-  - type: click
-    description: Click on 'Login'
-    selector: "text='Login'"
-  - type: click
-    description: Trigger a story
-    selector: "text='Trigger Story'"
-  - type: verify
-    description: Verify story is triggered
-    selector: "text='Story Details'"
+# Commands Section
+- launchApp:
+    appId: com.example.nudgetest_demoqa1
+
+- tapOn:
+    text: "User Identifier"
+
+- assertVisible:
+    text: "erfeferfr"
+
+
+
+- stopApp:
+    appId: "com.example.nudgetest_demoqa1"

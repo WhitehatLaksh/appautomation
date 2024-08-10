@@ -6,12 +6,16 @@ appId: com.example.nudgetest_demoqa1
 # Commands Section
 - launchApp:
     appId: com.example.nudgetest_demoqa1
-- tapOn:
+
+- assertVisible:
     text: "Track Story"
+    enabled: true
+
+- assertVisible:
+    text: "User Identifier"
+    enabled: true
+
 - tapOn:
-    text: "fgeff"
-- tapOn:
-    text: "password"
-    id: "password_field_id"  # Replace with actual ID
-- tapOn:
-    text: "Submit"
+    text: "Track Quiz"
+
+- stopApp

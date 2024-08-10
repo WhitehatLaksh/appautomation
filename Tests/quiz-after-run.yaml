@@ -1,0 +1,29 @@
+# Test after first run Quiz as a user
+appId: com.example.nudgetest_demoqa1
+
+# Separator
+---
+# Commands Section
+- launchApp:
+    appId: com.example.nudgetest_demoqa1
+- tapOn:
+    text: "Track Quiz"
+- assertVisible: "My Rewards"
+- assertNotVisible: "Start Quiz"
+
+- assertVisible: "MY REWARDS"
+- assertVisible: "VIEW RESPONSES"
+- tapOn:
+    text: "MY REWARDS"
+- extendedWaitUntil:
+    visible: "BACK TO HOME" # or any other selector
+    timeout: 50000
+- tapOn:
+    text: "BACK TO HOME"
+
+- assertVisible: "TRACK STORY"
+
+
+- stopApp
+
+

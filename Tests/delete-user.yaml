@@ -1,0 +1,25 @@
+# Test after first run Quiz as a user
+appId: com.example.nudgetest_demoqa1
+
+# Separator
+---
+# Commands Section
+- launchApp:
+    appId: com.example.nudgetest_demoqa1
+
+- assertVisible: "Delete User"
+
+- tapOn:
+    text: "Delete User"
+- extendedWaitUntil:
+    visible: "Delete User" # or any other selector
+    timeout: 10000
+- tapOn:
+    text: "Track Story"
+
+- assertVisible: "TRACK STORY"
+
+
+- stopApp
+
+
