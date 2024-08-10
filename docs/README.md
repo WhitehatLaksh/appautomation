@@ -127,3 +127,82 @@ Push the changes to GitHub:
 bash
 Copy code
 git push
+
+
+********************************************************
+If you're facing version mismatch issue please follow below steps: 
+
+Step 1: Kill Any Running ADB Instances
+First, stop any running ADB servers:
+
+bash
+Copy code
+adb kill-server
+*********************************************************
+Step 2: Remove Any Conflicting ADB Versions
+You might have ADB installed from different sources (like the Android SDK and Ubuntu's package manager). You should remove the one from the package manager and use the one that comes with Android Studio.
+
+Remove ADB installed via package manager:
+
+bash
+Copy code
+sudo apt-get remove adb
+Verify that ADB is not running:
+
+bash
+Copy code
+adb version
+If you get a "command not found" error, it means ADB has been successfully removed.
+
+*********************************************************
+
+Step 3: Use ADB from Android Studio
+The correct version of ADB should be the one bundled with Android Studio. You can make sure that your system uses this version by adding it to your PATH.
+
+Find the path to Android Studio’s ADB:
+
+If you installed Android Studio in the default location, the path should be:
+
+bash
+Copy code
+~/Android/Sdk/platform-tools/adb
+Add this to your PATH:
+
+You can add this to your .bashrc or .bash_profile file to make sure this ADB version is used by default.
+
+Open your .bashrc file:
+
+bash
+Copy code
+nano ~/.bashrc
+Add the following line to the end of the file:
+
+bash
+Copy code
+export PATH=$PATH:~/Android/Sdk/platform-tools
+Save the file and exit the editor.
+
+Reload your terminal:
+
+Run the following command to apply the changes:
+
+bash
+Copy code
+source ~/.bashrc
+*********************************************************
+Step 4: Restart the ADB Server
+Now start the ADB server using the correct version:
+
+bash
+Copy code
+adb start-server
+*********************************************************
+Step 5: Install the APK Again
+Finally, try to install the APK again:
+
+bash
+Copy code
+adb install path/to/app-release.apk
+
+This should resolve the version mismatch issue and allow you to install the APK successfully.
+***

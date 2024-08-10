@@ -7,11 +7,12 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 - tapOn:
-    text: "Track Story"
+    text: "Track Quiz"
+- assertNotVisible: "My Rewards"
 - tapOn:
-    text: "fgeff"
+    text: "Start Quiz"
 - tapOn:
-    text: "password"
-    id: "password_field_id"  # Replace with actual ID
+    text: "a)"
 - tapOn:
-    text: "Submit"
+      text: "My Rewards"
+
