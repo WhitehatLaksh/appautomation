@@ -21,15 +21,16 @@ appId: com.example.nudgetest_demoqa1
 - tapOn: b) Avocado
 - tapOn: b) Japan
 - tapOn: a) 0
+- assertVisible: 
+    text: KalpanaQASTATICREwards
+      Coupon Code
+      REGRESSIONCOUPON10%
 - tapOn:
     point: 50%,54%
 - tapOn: MY REWARDS
 - tapOn:
     point: 27%,40%
-- assertVisible: 
-    text: KalpanaQASTATICREwards
-      Coupon Code
-      REGRESSIONCOUPON10%
+
 - tapOn:
     point: 50%,49%
 - tapOn:

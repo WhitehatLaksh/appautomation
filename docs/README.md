@@ -214,3 +214,15 @@ maestro test file_name
 To See tests running: 
 
 run this command - maestro studio 
+
+To upload app and run tests on maestro cloud, use this command - 
+
+maestro cloud ./apk/app-release.apk ./Tests
+
+
+Follow this link to test flows on maestro cloud: 
+
+https://console.mobile.dev/uploads/16f3ed48-7c54-4cde-8135-ca1a8ae0fbb9?teamId=d2193983-9866-4b19-8eba-6e83ac256dc0&appId=a235b121-c6f7-4146-ad2b-274262b024c3
+
+
+command to run tests on cloud -  maestro cloud --apiKey cdfd8c06-bbd1-4565-a90b-e0324e2bc6dd ./apk/app-release.apk ./Tests
