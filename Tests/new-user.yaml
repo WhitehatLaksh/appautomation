@@ -6,29 +6,5 @@ appId: com.example.nudgetest_demoqa1
 # Commands Section
 - launchApp:
     appId: com.example.nudgetest_demoqa1
-
-- assertVisible: "Track Quiz"
-
-- tapOn:
-    text: "Track Story"
-- tapOn:
-     text: "Track Quiz"
-- assertNotVisible: "MY RESPONSES"
-
-- assertVisible: "Start Quiz"
-- tapOn:
-    text: "Start Quiz"
-- extendedWaitUntil:
-    visible: "MY REWARDS" # or any other selector
-    timeout: 60000
-- tapOn:
-    text: "MY REWARDS"
-
-- assertVisible: "Back To Home"
-- tapOn:
-    text: "Back To Home"
-
-
-- stopApp
-
+- killApp     
 

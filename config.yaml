@@ -1,0 +1,7 @@
+# .maestro/config.yaml
+notifications:
+  email:
+    enabled: true
+    recipients:
+      - lakshayindian19@live.com
+      - lakshay.saini@shiprocket.com

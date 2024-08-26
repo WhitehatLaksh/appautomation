@@ -7,15 +7,62 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
-- assertVisible:
-    text: "Track Story"
-    enabled: true
+- tapOn: 
+    text: Track Quiz
 
-- assertVisible:
-    text: "User Identifier"
-    enabled: true
+- tapOn: 
+    text: START QUIZ
+
+- tapOn: 
+    text: c) Paris
+
+- tapOn: 
+    text: b) Oxygen
+
+- tapOn: 
+    text: c) Jupiter
+
+- tapOn: 
+    text: b) 1912
+
+- tapOn: 
+    text: c) Leonardo da Vinci
+
+- tapOn: 
+    text: b) Avocado
+
+- tapOn: 
+    text: b) Japan
+
+- tapOn: 
+    text: a) 0
 
 - tapOn:
-    text: "Track Quiz"
+    point: 50%,54%
 
-- stopApp
+- tapOn: 
+    text: MY REWARDS
+
+- tapOn:
+    point: 27%,40%
+
+- assertVisible: 
+    text: |-
+      KalpanaQASTATICREwards
+      Coupon Code
+      REGRESSIONCOUPON10%
+
+- tapOn:
+    point: 50%,49%
+
+- tapOn:
+    point: 49%,3%
+
+- assertVisible:
+    id: android:id/content
+
+- runFlow:
+    when:
+      visible:
+        id: "android:id/content"
+    file: "new-user.yaml"

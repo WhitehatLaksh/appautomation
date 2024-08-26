@@ -1,4 +1,4 @@
-# Test after first run Quiz as a user
+# Launch the app
 appId: com.example.nudgetest_demoqa1
 
 # Separator
@@ -6,24 +6,38 @@ appId: com.example.nudgetest_demoqa1
 # Commands Section
 - launchApp:
     appId: com.example.nudgetest_demoqa1
+- tapOn: Delete User
+- tapOn: Track Quiz
+- assertNotVisible: Start Quiz
+- tapOn: Track Story
+- tapOn: User Identifier
+- tapOn: Track Quiz
+- tapOn: START QUIZ
+- tapOn: c) Paris
+- tapOn: b) Oxygen
+- tapOn: c) Jupiter
+- tapOn: b) 1912
+- tapOn: c) Leonardo da Vinci
+- tapOn: b) Avocado
+- tapOn: b) Japan
+- tapOn: a) 0
 - tapOn:
-    text: "Track Quiz"
-- assertVisible: "My Rewards"
-- assertNotVisible: "Start Quiz"
-
-- assertVisible: "MY REWARDS"
-- assertVisible: "VIEW RESPONSES"
+    point: 50%,54%
+- tapOn: MY REWARDS
 - tapOn:
-    text: "MY REWARDS"
-- extendedWaitUntil:
-    visible: "BACK TO HOME" # or any other selector
-    timeout: 50000
+    point: 27%,40%
+- assertVisible: 
+    text: KalpanaQASTATICREwards
+      Coupon Code
+      REGRESSIONCOUPON10%
 - tapOn:
-    text: "BACK TO HOME"
-
-- assertVisible: "TRACK STORY"
-
-
-- stopApp
-
-
+    point: 50%,49%
+- tapOn:
+    id: android:id/content
+- tapOn:
+    point: 50%,49%
+- tapOn:
+    point: 49%,3%
+- assertVisible:
+    id: android:id/content
+- killApp
