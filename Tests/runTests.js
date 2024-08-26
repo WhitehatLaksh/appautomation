@@ -1,3 +1,5 @@
+'To check wether the delete.yaml is working fine or not?'
+
 const { execSync } = require('child_process');
 const path = require('path');
 

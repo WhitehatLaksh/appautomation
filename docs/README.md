@@ -206,3 +206,11 @@ adb install path/to/app-release.apk
 
 This should resolve the version mismatch issue and allow you to install the APK successfully.
 ***
+
+To run tests, use commands
+
+maestro test file_name
+
+To See tests running: 
+
+run this command - maestro studio 
