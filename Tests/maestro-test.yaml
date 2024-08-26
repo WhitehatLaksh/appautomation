@@ -66,3 +66,12 @@ appId: com.example.nudgetest_demoqa1
       visible:
         id: "android:id/content"
     file: "new-user.yaml"
+
+- runFlow: 
+    file: "quiz-after-run.yaml"
+
+- runFlow:
+    when:
+      visible:
+        id: "android:id/content"
+    file: "new-user.yaml"
