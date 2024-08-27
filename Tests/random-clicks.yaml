@@ -8,6 +8,8 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
+- startRecording: Random_clicks
+
 - assertVisible: "Delete User"
 
 - tapOn:
@@ -23,4 +25,4 @@ appId: com.example.nudgetest_demoqa1
 - stopApp
 
 # Deletion
-
+- stopRecording

@@ -7,6 +7,8 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
+- startRecording: recording_2
+
 - tapOn:
     text: "Delete User"
 
@@ -91,3 +93,5 @@ appId: com.example.nudgetest_demoqa1
 - assertVisible:
     text: |
       KalpanaQASTATICREwards
+
+- stopRecording

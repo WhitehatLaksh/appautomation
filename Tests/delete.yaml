@@ -6,6 +6,8 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
+- startRecording: After_deletion_quiz    
+
 - assertVisible:  # assertion for the Delete button available
     text: "Delete User"
 
@@ -101,3 +103,5 @@ appId: com.example.nudgetest_demoqa1
 
 - assertVisible:
     text: "Delete User"
+
+- stopRecording

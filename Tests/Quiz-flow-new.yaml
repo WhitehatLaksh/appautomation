@@ -7,6 +7,8 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
+- startRecording: Quiz_flow_new
+
 - tapOn:
     text: "Track Quiz"
 
@@ -114,3 +116,4 @@ appId: com.example.nudgetest_demoqa1
     text: "Track Story"
 
 - killApp
+- stopRecording
