@@ -1,4 +1,5 @@
-### Test case 3: To delete a user. 
+### Test Case 1: Quiz Flow for New User
+### Objective:** Verify that the quiz flow works correctly for a newly created.
 appId: com.example.nudgetest_demoqa1
 
 ---
@@ -6,22 +7,16 @@ appId: com.example.nudgetest_demoqa1
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
-- assertVisible:  # assertion for the Delete button available
-    text: "Delete User"
-
-- tapOn:
-    text: "Delete User"
-
 - tapOn:
     text: "Track Quiz"
 
+- extendedWaitUntil:
+    visible: "Start Quiz"
+    
 - assertVisible:
-    text: "Start Quiz"  # assertion for Old user not logged in. 
+    text: "START QUIZ"
 
 - tapOn:
-    text: "START Quiz"
-
-- assertVisible:
     text: "START QUIZ"
 
 - assertVisible:
@@ -37,19 +32,19 @@ appId: com.example.nudgetest_demoqa1
     text: "b) Oxygen"
 
 - assertVisible:
-    text: "c) William Shakespeare"  # assertion for the next question visibility
+    text: "c) William Shakespeare"  #  assertion for the next question visibility
 
 - tapOn:
     text: "c) William Shakespeare"
 
 - assertVisible:
-    text: "c) Jupiter"  # assertion for the next question visibility
+    text: "c) Jupiter"  #  assertion for the next question visibility
 
 - tapOn:
     text: "c) Jupiter"
 
 - assertVisible:
-    text: "b) 1912"  # assertion for the next question visibility
+    text: "b) 1912"  #  assertion for the next question visibility
 
 - tapOn:
     text: "b) 1912"
@@ -61,25 +56,25 @@ appId: com.example.nudgetest_demoqa1
     text: "c) 2"
 
 - assertVisible:
-    text: "c) Leonardo da Vinci"  # assertion for the next question visibility
+    text: "c) Leonardo da Vinci"  #  assertion for the next question visibility
 
 - tapOn:
     text: "c) Leonardo da Vinci"
 
 - assertVisible:
-    text: "b) Avocado"  # assertion for the next question visibility
+    text: "b) Avocado"  #  assertion for the next question visibility
 
 - tapOn:
     text: "b) Avocado"
 
 - assertVisible:
-    text: "b) Japan"  # assertion for the next question visibility
+    text: "b) Japan" #  assertion for the next question visibility
 
 - tapOn:
     text: "b) Japan"
 
 - assertVisible:
-    text: "a) 0"  # assertion for the next question visibility
+    text: "a) 0"  #  assertion for the next question visibility
 
 - tapOn:
     text: "a) 0"
@@ -88,7 +83,22 @@ appId: com.example.nudgetest_demoqa1
     text: "MY REWARDS"  # Assert that the quiz completion screen is visible
 
 - tapOn:
+    text: "MY REWARDS"
+
+- tapOn:
     point: "27%,40%"
+
+- assertVisible:
+    text: |
+      KalpanaQASTATICREwards
+      Coupon Code
+      REGRESSIONCOUPON10%
+
+- tapOn:
+    point: "50%,49%"
+
+- tapOn:
+    point: "49%,3%"
 
 - assertVisible:
     id: "android:id/content"
@@ -96,8 +106,11 @@ appId: com.example.nudgetest_demoqa1
 - assertVisible:
     text: "BACK TO HOME"
 
-- tapOn:
-    text: "BACK TO HOME"
+- assertVisible:
+    text: "Track Quiz"
+
 
 - assertVisible:
-    text: "Delete User"
+    text: "Track Story"
+
+- killApp

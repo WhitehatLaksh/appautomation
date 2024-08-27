@@ -1,25 +1,20 @@
-### Test case 3: To delete a user. 
+### Test Case 2: Quiz Flow for New User after using deleting previous user.
 appId: com.example.nudgetest_demoqa1
+
 
 ---
 
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
-- assertVisible:  # assertion for the Delete button available
-    text: "Delete User"
-
 - tapOn:
     text: "Delete User"
+
+- extendedWaitUntil:
+    visible: "Track Quiz"
 
 - tapOn:
     text: "Track Quiz"
-
-- assertVisible:
-    text: "Start Quiz"  # assertion for Old user not logged in. 
-
-- tapOn:
-    text: "START Quiz"
 
 - assertVisible:
     text: "START QUIZ"
@@ -88,16 +83,11 @@ appId: com.example.nudgetest_demoqa1
     text: "MY REWARDS"  # Assert that the quiz completion screen is visible
 
 - tapOn:
+    text: "MY REWARDS"
+
+- tapOn:
     point: "27%,40%"
 
 - assertVisible:
-    id: "android:id/content"
-
-- assertVisible:
-    text: "BACK TO HOME"
-
-- tapOn:
-    text: "BACK TO HOME"
-
-- assertVisible:
-    text: "Delete User"
+    text: |
+      KalpanaQASTATICREwards

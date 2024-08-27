@@ -1,4 +1,4 @@
-# Test to close app
+# Test to Reload app
 appId: com.example.nudgetest_demoqa1
 
 # Separator
@@ -8,3 +8,8 @@ appId: com.example.nudgetest_demoqa1
     appId: com.example.nudgetest_demoqa1
 - killApp     
 
+- launchApp: 
+    appId: com.example.nudgetest_demoqa1
+
+- assertVisible:
+    text: "Track QUIZ"
