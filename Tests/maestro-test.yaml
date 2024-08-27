@@ -1,5 +1,5 @@
 ### Test Case 1: Quiz Flow for New User
-**Objective:** Verify that the quiz flow works correctly for a newly created and logged-in user.
+### Objective:** Verify that the quiz flow works correctly for a newly created and logged-in user.
 
 appId: com.example.nudgetest_demoqa1
 flows:
