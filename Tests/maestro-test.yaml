@@ -1,14 +1,24 @@
-# Scope: Test Quiz floe for new user
-appId: com.example.nudgetest_demoqa1
+### Test Case 1: Quiz Flow for New User
+**Objective:** Verify that the quiz flow works correctly for a newly created and logged-in user.
 
-# Separator
+appId: com.example.nudgetest_demoqa1
+flows:
+  - name: Start Quiz for New User
 ---
-# Commands Section
+- steps: 
 - launchApp:
     appId: com.example.nudgetest_demoqa1
 
 - tapOn: 
     text: Track Quiz
+
+- extendedWaitUntil:
+    visible: "Start Quiz" 
+    timeout: 10000
+
+- assertExists:
+          text: "START QUIZ"  
+          timeout: 5000
 
 - tapOn: 
     text: START QUIZ
@@ -20,7 +30,13 @@ appId: com.example.nudgetest_demoqa1
     text: b) Oxygen
 
 - tapOn: 
+     text: c) William Shakespeare
+
+- tapOn: 
     text: c) Jupiter
+
+- tapOn:
+    text: c) 2
 
 - tapOn: 
     text: b) 1912
@@ -61,17 +77,6 @@ appId: com.example.nudgetest_demoqa1
 - assertVisible:
     id: android:id/content
 
-- runFlow:
-    when:
-      visible:
-        id: "android:id/content"
-    file: "new-user.yaml"
+- assertVisible: 
+    text: "BACK TO HOME"
 
-- runFlow: 
-    file: "quiz-after-run.yaml"
-
-- runFlow:
-    when:
-      visible:
-        id: "android:id/content"
-    file: "new-user.yaml"
